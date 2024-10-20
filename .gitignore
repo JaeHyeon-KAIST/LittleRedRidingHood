@@ -1,0 +1,24 @@
+# macOS 시스템 파일
+.DS_Store
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+
+# NetBeans
+/nbproject/
+
+# 빌드 파일
+/build/
+/out/
+/classes/
+/target/
+/*.class
+
+# Java 관련 패키징 파일들
+*.jar
+*.war
+*.ear
+
+# 기타 설정 파일
+/manifest.mf
