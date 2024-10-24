@@ -11,6 +11,7 @@ import Play.PlayObject.House.House;
 
 import Play.Scene.Scene;
 import Play.Scene.Scene1;
+import Play.Scene.TestScene;
 
 public class Play {
     protected String mPlayName = null;
@@ -59,5 +60,6 @@ public class Play {
 
     private void initializeScenes() {
         mSceneList.add(new Scene1());
+        mSceneList.add(new TestScene());
     }
 }
