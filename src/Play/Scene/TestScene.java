@@ -12,6 +12,8 @@ public class TestScene extends Scene {
         mplay.wolf.say("Hello, I am a wolf");
         mplay.wolf.disguiseTo(Wolf.disguiseType.fairyQueen);
         mplay.wolf.say("Hello, I am a fairy queen");
+        mplay.wolf.disguiseRevealed();
+        mplay.wolf.say("Hello, I am a wolf");
 
         mplay.pig1.say("action", "some words");
         mplay.pig1.sayWith(mplay.pig2, "some words");
