@@ -9,11 +9,7 @@ import Play.PlayObject.Animal.PigType2;
 import Play.PlayObject.Animal.Wolf;
 import Play.PlayObject.House.House;
 
-import Play.Scene.Scene;
-import Play.Scene.Scene1;
-import Play.Scene.Scene2;
-import Play.Scene.Scene3;
-import Play.Scene.TestScene;
+import Play.Scene.*;
 
 public class Play {
     protected String mPlayName = null;
@@ -68,6 +64,7 @@ public class Play {
         mSceneList.add(new Scene1());
         mSceneList.add(new Scene2());
         mSceneList.add(new Scene3());
+        mSceneList.add(new Scene4());
         mSceneList.add(new TestScene());
     }
 }
