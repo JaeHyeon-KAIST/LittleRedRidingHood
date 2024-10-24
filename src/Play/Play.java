@@ -11,6 +11,7 @@ import Play.PlayObject.House.House;
 
 import Play.Scene.Scene;
 import Play.Scene.Scene1;
+import Play.Scene.Scene2;
 import Play.Scene.TestScene;
 
 public class Play {
@@ -60,6 +61,7 @@ public class Play {
 
     private void initializeScenes() {
         mSceneList.add(new Scene1());
+        mSceneList.add(new Scene2());
         mSceneList.add(new TestScene());
     }
 }
