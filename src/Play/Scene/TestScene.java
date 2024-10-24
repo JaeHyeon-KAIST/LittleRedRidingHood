@@ -14,5 +14,7 @@ public class TestScene extends Scene {
         mplay.wolf.say("Hello, I am a fairy queen");
 
         mplay.pig1.say("action", "some words");
+        mplay.pig1.sayWith(mplay.pig2, "some words");
+        mplay.pig1.sayWith(mplay.pig2, "action", "some words");
     }
 }

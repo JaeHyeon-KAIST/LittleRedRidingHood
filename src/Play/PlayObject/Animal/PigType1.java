@@ -9,6 +9,13 @@ public class PigType1 extends Pig {
         Play.display(s);
     }
 
+    public void sayWith(PigType1 pig, String action, String str) {
+        String s =
+            mName + " and " + pig.getName() + " [" + action + "] say " +
+                "together, \"" + str + "\"";
+        Play.display(s);
+    }
+
     public PigType1(String name, String musicalInstrument) {
         super(name, musicalInstrument);
     }
