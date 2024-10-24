@@ -1,5 +1,7 @@
 package Play.PlayObject.Animal;
 
+import Play.Play;
+
 public class Pig extends Animal {
     protected String mMusicalInstrument = null;
 
@@ -9,7 +11,7 @@ public class Pig extends Animal {
 
     public void playMusicalInstrument() {
         String s = mName + " plays his " + mMusicalInstrument;
-        System.out.println(s);
+        Play.displayNarration(s);
     }
 
     public Pig(String name, String musicalInstrument) {

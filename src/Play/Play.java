@@ -25,7 +25,11 @@ public class Play {
         display("<<" + this.mPlayName + ">>");
     }
 
-    public void display(String s) {
+    public static void displayNarration(String s) {
+        display("[" + s + "]");
+    }
+
+    public static void display(String s) {
         System.out.println(s);
     }
 
@@ -47,7 +51,7 @@ public class Play {
         }
 
         sb.append("say together, \"").append(message).append("\"");
-        System.out.println(sb.toString());
+        display(sb.toString());
     }
 
     public Play(String name) {

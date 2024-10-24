@@ -11,7 +11,7 @@ public abstract class Scene {
     }
 
     public void displaySceneTitle() {
-        mplay.display(this.mSceneTitle);
+        Play.display(this.mSceneTitle);
     }
 
     public abstract void play();
