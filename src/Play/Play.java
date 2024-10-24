@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Play.PlayObject.Animal.Human;
-import Play.PlayObject.Animal.Pig;
+import Play.PlayObject.Animal.PigType1;
+import Play.PlayObject.Animal.PigType2;
 import Play.PlayObject.House.House;
 import Play.PlayObject.PlayObject;
 
@@ -15,9 +16,9 @@ public class Play {
     protected String mPlayName = null;
     public List<Scene> mSceneList = new ArrayList<>();
     public Human littleRedRidingHood = null;
-    public Pig pig1 = null;
-    public Pig pig2 = null;
-    public Pig pig3 = null;
+    public PigType1 pig1 = null;
+    public PigType1 pig2 = null;
+    public PigType2 pig3 = null;
 
     public static House pigHouse = null;
 
@@ -66,9 +67,9 @@ public class Play {
 
     private void initializeActors() {
         littleRedRidingHood = new Human("Little Red Riding Hood");
-        pig1 = new Pig("Adam", "flute");
-        pig2 = new Pig("Brian", "fiddle");
-        pig3 = new Pig("Charles", "piano");
+        pig1 = new PigType1("Adam", "flute");
+        pig2 = new PigType1("Brian", "fiddle");
+        pig3 = new PigType2("Charles", "piano");
     }
 
     private void initializeProps() {

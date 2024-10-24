@@ -24,5 +24,6 @@ public class Scene1 extends Scene {
             "and wine. She's awful awful sick. " +
             "I'm in a great big hurry I need to get there quick."
         );
+        mplay.pig3.repairHouse();
     }
 }

@@ -2,7 +2,7 @@ package Play.PlayObject.Animal;
 
 import Play.Play;
 
-public class Pig extends Animal {
+public abstract class Pig extends Animal {
     protected String mMusicalInstrument = null;
 
     public String getMusicalInstrument() {
