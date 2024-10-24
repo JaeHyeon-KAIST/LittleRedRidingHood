@@ -7,7 +7,6 @@ import Play.PlayObject.Animal.Human;
 import Play.PlayObject.Animal.PigType1;
 import Play.PlayObject.Animal.PigType2;
 import Play.PlayObject.House.House;
-import Play.PlayObject.PlayObject;
 
 import Play.Scene.Scene;
 import Play.Scene.Scene1;
@@ -32,27 +31,6 @@ public class Play {
 
     public static void display(String s) {
         System.out.println(s);
-    }
-
-    public void sayTogether(List<PlayObject> objects, String message) {
-        if (objects == null || objects.isEmpty()) {
-            return;
-        }
-
-        StringBuilder sb = new StringBuilder();
-
-        for (int i = 0; i < objects.size(); i++) {
-            PlayObject obj = objects.get(i);
-            sb.append(obj.getName());
-            if (i == objects.size() - 1) {
-                sb.append(" ");
-            } else {
-                sb.append(" and ");
-            }
-        }
-
-        sb.append("say together, \"").append(message).append("\"");
-        display(sb.toString());
     }
 
     public Play(String name) {
