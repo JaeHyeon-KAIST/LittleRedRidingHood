@@ -15,6 +15,7 @@ import Play.Scene.Scene2;
 import Play.Scene.Scene3;
 import Play.Scene.Scene4;
 import Play.Scene.Scene5;
+import Play.Scene.Scene6;
 import Play.Scene.TestScene;
 
 public class Play {
@@ -72,6 +73,7 @@ public class Play {
         mSceneList.add(new Scene3());
         mSceneList.add(new Scene4());
         mSceneList.add(new Scene5());
+        mSceneList.add(new Scene6());
         mSceneList.add(new TestScene());
     }
 }
