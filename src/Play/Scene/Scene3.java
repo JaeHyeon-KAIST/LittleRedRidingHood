@@ -22,7 +22,7 @@ public class Scene3 extends Scene {
         );
 //        mplay.grandma.surprised();
 //        mplay.grandma.runAwayTo(mplay.closet);
-//        mplay.grandma.hideIn(mplay.closet);
+//        mplay.grandma.hideIn(mplay.grandmaHouse.closet);
 //        mplay.wolf.tryToOpenTheDoor();
         mplay.littleRedRidingHood.runAwayTo(mplay.grandmaHouse);
 //        mplay.littleRedRidingHood.knock();
