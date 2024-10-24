@@ -10,5 +10,7 @@ public class TestScene extends Scene {
     @Override
     public void play() {
         mplay.wolf.disguiseTo(Wolf.disguiseType.fairyQueen);
+
+        mplay.pig1.say("action", "some words");
     }
 }

@@ -28,4 +28,9 @@ public abstract class Animal extends PlayObject {
         String s = mName + " says, \"" + something + "\"";
         Play.display(s);
     }
+
+    public void say(String action, String something) {
+        String s = mName + " [" + action + "] says, \"" + something + "\"";
+        Play.display(s);
+    }
 }
