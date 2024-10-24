@@ -6,6 +6,7 @@ import java.util.List;
 import Play.PlayObject.Animal.Human;
 import Play.PlayObject.Animal.PigType1;
 import Play.PlayObject.Animal.PigType2;
+import Play.PlayObject.Animal.Wolf;
 import Play.PlayObject.House.House;
 
 import Play.Scene.Scene;
@@ -18,6 +19,7 @@ public class Play {
     public PigType1 pig1 = null;
     public PigType1 pig2 = null;
     public PigType2 pig3 = null;
+    public Wolf wolf = null;
 
     public static House pigHouse = null;
 
@@ -48,6 +50,7 @@ public class Play {
         pig1 = new PigType1("Adam", "flute");
         pig2 = new PigType1("Brian", "fiddle");
         pig3 = new PigType2("Charles", "piano");
+        wolf = new Wolf("Wolf");
     }
 
     private void initializeProps() {
