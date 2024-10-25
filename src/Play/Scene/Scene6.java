@@ -5,7 +5,7 @@ import Play.Play;
 public class Scene6 extends Scene {
     public Scene6() {
         super("6. " + mplay.grandma.getName() + " rescues " +
-                mplay.littleRedRidingHood.getName()
+            mplay.littleRedRidingHood.getName()
         );
     }
 
@@ -14,8 +14,8 @@ public class Scene6 extends Scene {
 //        mplay.littleRedRidingHood.runFrom(mplay.wolf);
 //        mplay.wolf.chase(mplay.littleRedRidingHood);
         Play.displayNarration(mplay.grandma.getName() +
-                " saves " + mplay.littleRedRidingHood.getName() +
-                " from the wolf" + " with umbrella"
+            " saves " + mplay.littleRedRidingHood.getName() +
+            " from the wolf" + " with umbrella"
         );
 //        mplay.grandma.hideIn(mplay.grandmaHouse.closet);
 //        mplay.littleRedRidingHood.hideIn(mplay.grandmaHouse.closet);

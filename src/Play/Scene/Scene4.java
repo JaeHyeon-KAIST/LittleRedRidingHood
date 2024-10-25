@@ -6,7 +6,7 @@ import Play.PlayObject.Animal.Wolf;
 public class Scene4 extends Scene {
     public Scene4() {
         super("4. " + mplay.wolf.getName() + " chases " +
-                mplay.littleRedRidingHood.getName()
+            mplay.littleRedRidingHood.getName()
         );
     }
 

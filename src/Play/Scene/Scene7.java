@@ -5,7 +5,7 @@ import Play.Play;
 public class Scene7 extends Scene {
     public Scene7() {
         super("7. " + mplay.pig3.getName() + " chases out " +
-                mplay.wolf.getName() + " from " + mplay.grandmaHouse.getName()
+            mplay.wolf.getName() + " from " + mplay.grandmaHouse.getName()
         );
     }
 
@@ -25,7 +25,7 @@ public class Scene7 extends Scene {
         mplay.pig3.playMusicalInstrument();
 //        mplay.littleRedRidingHood.playMusicalInstrument();
         Play.displayNarration(mplay.grandma.getName() +
-                " is knitting on the chair"
+            " is knitting on the chair"
         );
 //        mplay.pig1.dance();
 //        mplay.pig2.dance();
