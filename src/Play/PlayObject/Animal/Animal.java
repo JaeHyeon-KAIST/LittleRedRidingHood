@@ -15,10 +15,10 @@ public abstract class Animal extends PlayObject {
         Play.displayNarration(s);
     }
 
-    public void walkToWith(List<PlayObject> poList, PlayObject place) {
+    public void walkToWith(PlayObject place, Animal... animals) {
         StringBuilder s = new StringBuilder(mName);
-        for (PlayObject po : poList) {
-            s.append(" and ").append(po.getName());
+        for (Animal a : animals) {
+            s.append(" and ").append(a.getName());
         }
         s.append(" walk to ");
         s.append(place.getName());

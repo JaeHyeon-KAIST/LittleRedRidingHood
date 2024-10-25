@@ -50,8 +50,7 @@ public class Scene1 extends Scene {
         mplay.pig1.playMusicalInstrument();
         mplay.pig2.playMusicalInstrument();
         mplay.littleRedRidingHood.walkToWith(
-            Arrays.asList(mplay.pig1, mplay.pig2),
-            mplay.forest
+            mplay.forest, mplay.pig1, mplay.pig2
         );
         mplay.pig3.clickTongue();
         mplay.pig3.repairHouse();
