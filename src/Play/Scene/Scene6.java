@@ -11,17 +11,13 @@ public class Scene6 extends Scene {
 
     @Override
     public void play() {
-//        mplay.littleRedRidingHood.runFrom(mplay.wolf);
-//        mplay.wolf.chase(mplay.littleRedRidingHood);
+        mplay.littleRedRidingHood.runAwayFrom(mplay.wolf);
+        mplay.wolf.chase(mplay.littleRedRidingHood);
         Play.displayNarration(mplay.grandma.getName() +
             " saves " + mplay.littleRedRidingHood.getName() +
             " from the wolf" + " with umbrella"
         );
-//        mplay.grandma.hideIn(mplay.grandmaHouse.closet);
-//        mplay.littleRedRidingHood.hideIn(mplay.grandmaHouse.closet);
-
-//        mplay.pig1.hide(mplay.pighouse.bed);
-//        mplay.pig2.hide(mplay.pighouse.bed);
-//        mplay.wolf.tryToOpenTheDoor();
+        mplay.littleRedRidingHood.hideIn(mplay.grandmaHouse.getCloset());
+        mplay.wolf.tryToOpen(mplay.grandmaHouse.getCloset());
     }
 }
