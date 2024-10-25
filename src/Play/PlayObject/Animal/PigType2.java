@@ -37,7 +37,8 @@ public class PigType2 extends Animal {
     }
 
     public void pourInto(PlayObject what, PlayObject where) {
-        String s = mName + " pours " + what + " into " + where.getName();
+        String s =
+            mName + " pours " + what.getName() + " into " + where.getName();
         Play.displayNarration(s);
     }
 
