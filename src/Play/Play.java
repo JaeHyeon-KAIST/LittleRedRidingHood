@@ -29,8 +29,8 @@ public class Play {
     public PigType2 pig3 = null;
     public Wolf wolf = null;
 
-    public static House pigHouse = null;
-    public static House grandmaHouse = null;
+    public House pigHouse = null;
+    public House grandmaHouse = null;
 
     public void displayPlayTitle() {
         display("<<" + this.mPlayName + ">>");
