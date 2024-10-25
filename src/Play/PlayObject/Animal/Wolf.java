@@ -58,6 +58,11 @@ public class Wolf extends Animal {
         Play.displayNarration(s);
     }
 
+    public void sufferInPain() {
+        String s = mName + " suffers in pain";
+        Play.displayNarration(s);
+    }
+
     @Override
     public void say(String something) {
         if (mDisguise != null) {
