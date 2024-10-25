@@ -31,6 +31,16 @@ public class PigType2 extends Animal {
         Play.displayNarration(s);
     }
 
+    public void sneakInto(PlayObject po) {
+        String s = mName + " sneaks into " + po.getName();
+        Play.displayNarration(s);
+    }
+
+    public void pourInto(PlayObject what, PlayObject where) {
+        String s = mName + " pours " + what + " into " + where.getName();
+        Play.displayNarration(s);
+    }
+
     public PigType2(String name, String musicalInstrument) {
         super(name, musicalInstrument);
         mBag = new Bag(name + "'s bag");

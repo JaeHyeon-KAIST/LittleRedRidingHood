@@ -33,6 +33,11 @@ public class PigType1 extends Animal {
         Play.displayNarration(s);
     }
 
+    public void shackHandsWith(PigType1 pig) {
+        String s = mName + " shack hands with " + pig.getName();
+        Play.displayNarration(s);
+    }
+
     public PigType1(String name, String musicalInstrument) {
         super(name, musicalInstrument);
     }
