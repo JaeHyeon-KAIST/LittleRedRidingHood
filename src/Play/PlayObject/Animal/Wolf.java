@@ -2,6 +2,7 @@ package Play.PlayObject.Animal;
 
 import Play.Play;
 import Play.PlayObject.PlayObject;
+import Play.PlayObject.Props.WolfPants;
 
 public class Wolf extends Animal {
     public enum disguiseType {
@@ -21,6 +22,12 @@ public class Wolf extends Animal {
         mDisguise = null;
         String s = mName + "'s disguise is revealed";
         Play.displayNarration(s);
+    }
+
+    private WolfPants mPants = null;
+
+    public WolfPants getPants() {
+        return mPants;
     }
 
     public void walkToAnimals(Animal... animals) {
@@ -65,5 +72,6 @@ public class Wolf extends Animal {
 
     public Wolf(String name) {
         super(name);
+        mPants = new WolfPants(name + "'s pants");
     }
 }
