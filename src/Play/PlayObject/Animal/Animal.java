@@ -3,8 +3,6 @@ package Play.PlayObject.Animal;
 import Play.Play;
 import Play.PlayObject.PlayObject;
 
-import java.util.List;
-
 public abstract class Animal extends PlayObject {
     protected Animal(String name) {
         super(name);
