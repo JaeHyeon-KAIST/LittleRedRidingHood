@@ -1,6 +1,7 @@
 package Play.PlayObject.Animal;
 
 import Play.Play;
+import Play.PlayObject.PlayObject;
 
 public class Wolf extends Animal {
     public enum disguiseType {
@@ -12,6 +13,8 @@ public class Wolf extends Animal {
 
     public void disguiseTo(disguiseType dt) {
         mDisguise = dt;
+        String s = mName + " disguises as " + mDisguise;
+        Play.displayNarration(s);
     }
 
     public void disguiseRevealed() {
@@ -33,6 +36,11 @@ public class Wolf extends Animal {
 
     public void drool() {
         String s = mName + " drools";
+        Play.displayNarration(s);
+    }
+
+    public void tryToOpen(PlayObject po) {
+        String s = mName + " tries to open " + po.getName();
         Play.displayNarration(s);
     }
 

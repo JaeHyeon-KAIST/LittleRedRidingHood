@@ -53,7 +53,7 @@ public abstract class Animal extends PlayObject {
     }
 
     public void say(String action, String something) {
-        String s = mName + " [" + action + "] says, \"" + something + "\"";
+        String s = mName + " (" + action + ") says, \"" + something + "\"";
         Play.display(s);
     }
 
@@ -74,5 +74,10 @@ public abstract class Animal extends PlayObject {
         }
         s.append(" are surprised");
         Play.displayNarration(s.toString());
+    }
+
+    public void knock(PlayObject po) {
+        String s = mName + " knocks " + po.getName();
+        Play.displayNarration(s);
     }
 }
