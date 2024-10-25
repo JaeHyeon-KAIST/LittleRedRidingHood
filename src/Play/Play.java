@@ -59,7 +59,7 @@ public class Play {
     }
 
     private void initializeActors() {
-        littleRedRidingHood = new Human("Little Red Riding Hood");
+        littleRedRidingHood = new Human("Little Red Riding Hood", "piano");
         grandma = new Human("Grandma");
         pig1 = new PigType1("Adam", "flute");
         pig2 = new PigType1("Brian", "fiddle");

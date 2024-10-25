@@ -17,4 +17,8 @@ public class Human extends Animal {
     public Human(String name) {
         super(name);
     }
+
+    public Human(String name, String musicalInstrument) {
+        super(name, musicalInstrument);
+    }
 }

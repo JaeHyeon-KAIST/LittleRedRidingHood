@@ -4,8 +4,14 @@ import Play.Play;
 import Play.PlayObject.PlayObject;
 
 public abstract class Animal extends PlayObject {
-    protected Animal(String name) {
-        super(name);
+    protected String mMusicalInstrument = null;
+
+    public void playMusicalInstrument() {
+        if (mMusicalInstrument == null) {
+            return;
+        }
+        String s = mName + " plays his " + mMusicalInstrument;
+        Play.displayNarration(s);
     }
 
     public void walkTo(PlayObject po) {
@@ -77,5 +83,14 @@ public abstract class Animal extends PlayObject {
     public void knock(PlayObject po) {
         String s = mName + " knocks " + po.getName();
         Play.displayNarration(s);
+    }
+
+    protected Animal(String name) {
+        super(name);
+    }
+
+    protected Animal(String name, String musicalInstrument) {
+        super(name);
+        mMusicalInstrument = musicalInstrument;
     }
 }
