@@ -8,6 +8,7 @@ import Play.PlayObject.Animal.PigType1;
 import Play.PlayObject.Animal.PigType2;
 import Play.PlayObject.Animal.Wolf;
 import Play.PlayObject.Place.House;
+import Play.PlayObject.Place.Forest;
 
 import Play.Scene.Scene;
 import Play.Scene.Scene1;
@@ -31,6 +32,7 @@ public class Play {
 
     public House pigHouse = null;
     public House grandmaHouse = null;
+    public Forest forest = null;
 
     public void displayPlayTitle() {
         display("<<" + this.mPlayName + ">>");
@@ -66,6 +68,7 @@ public class Play {
     private void initializeProps() {
         pigHouse = new House("pig's house");
         grandmaHouse = new House("grandma's house");
+        forest = new Forest("forest");
     }
 
     private void initializeScenes() {
