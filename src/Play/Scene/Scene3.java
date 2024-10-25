@@ -13,19 +13,19 @@ public class Scene3 extends Scene {
     @Override
     public void play() {
         mplay.wolf.walkTo(mplay.grandmaHouse);
-//        mplay.wolf.knock();
+        mplay.wolf.knock(mplay.grandmaHouse.getDoor());
         Play.displayNarration(mplay.grandma.getName() +
             " is knitting on the bed"
         );
         Play.displayNarration(mplay.wolf.getName() +
             " walks into grandma house"
         );
-//        mplay.grandma.surprised();
-//        mplay.grandma.runAwayTo(mplay.closet);
-//        mplay.grandma.hideIn(mplay.grandmaHouse.closet);
-//        mplay.wolf.tryToOpenTheDoor();
+        mplay.grandma.surprised();
+        mplay.grandma.runAwayTo(mplay.grandmaHouse.getCloset());
+        mplay.grandma.hideIn(mplay.grandmaHouse.getCloset());
+        mplay.wolf.tryToOpen(mplay.grandmaHouse.getCloset());
         mplay.littleRedRidingHood.runAwayTo(mplay.grandmaHouse);
-//        mplay.littleRedRidingHood.knock();
+        mplay.littleRedRidingHood.knock(mplay.grandmaHouse.getDoor());
         mplay.wolf.disguiseTo(Wolf.disguiseType.grandma);
         mplay.wolf.say("Come in.");
         Play.displayNarration(mplay.littleRedRidingHood.getName() +
