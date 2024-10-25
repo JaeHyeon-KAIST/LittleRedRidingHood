@@ -1,4 +1,4 @@
-package Play.PlayObject.House;
+package Play.PlayObject.Place;
 
 import Play.PlayObject.PlayObject;
 

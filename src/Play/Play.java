@@ -7,7 +7,7 @@ import Play.PlayObject.Animal.Human;
 import Play.PlayObject.Animal.PigType1;
 import Play.PlayObject.Animal.PigType2;
 import Play.PlayObject.Animal.Wolf;
-import Play.PlayObject.House.House;
+import Play.PlayObject.Place.House;
 
 import Play.Scene.Scene;
 import Play.Scene.Scene1;
