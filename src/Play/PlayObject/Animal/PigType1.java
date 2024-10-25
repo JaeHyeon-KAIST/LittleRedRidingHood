@@ -3,7 +3,7 @@ package Play.PlayObject.Animal;
 import Play.Play;
 import Play.PlayObject.PlayObject;
 
-public class PigType1 extends Pig {
+public class PigType1 extends Animal {
     public void sayWith(PigType1 pig, String str) {
         String s =
             mName + " and " + pig.getName() + " say together, \"" + str + "\"";

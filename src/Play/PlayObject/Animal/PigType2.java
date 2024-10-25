@@ -7,7 +7,7 @@ import Play.PlayObject.Props.Weapon;
 
 import java.util.ArrayList;
 
-public class PigType2 extends Pig {
+public class PigType2 extends Animal {
     private Bag mBag = null;
 
     public Bag getBag() {
