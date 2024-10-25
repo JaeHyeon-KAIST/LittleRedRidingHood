@@ -27,7 +27,6 @@ public abstract class Animal extends PlayObject {
     }
 
     public void runAwayTo(PlayObject po) {
-
         String s = null;
         if (po == null) {
             s = mName + " runs away";
@@ -35,6 +34,17 @@ public abstract class Animal extends PlayObject {
             s = mName + " runs away to " + po.getName();
         }
         Play.displayNarration(s);
+    }
+
+    public void runAwayToWith(PlayObject po, Animal... animals) {
+        StringBuilder s = new StringBuilder(mName);
+        for (Animal a : animals) {
+            s.append(" and ").append(a.getName());
+        }
+        s.append(" run away to ");
+        s.append(po.getName());
+
+        Play.displayNarration(s.toString());
     }
 
     public void say(String something) {
@@ -50,5 +60,19 @@ public abstract class Animal extends PlayObject {
     public void laugh() {
         String s = mName + " laughs";
         Play.displayNarration(s);
+    }
+
+    public void surprised() {
+        String s = mName + " is surprised";
+        Play.displayNarration(s);
+    }
+
+    public void surprisedWith(Animal... animals) {
+        StringBuilder s = new StringBuilder(mName);
+        for (Animal a : animals) {
+            s.append(" and ").append(a.getName());
+        }
+        s.append(" are surprised");
+        Play.displayNarration(s.toString());
     }
 }
