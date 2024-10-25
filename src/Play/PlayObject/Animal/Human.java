@@ -2,6 +2,7 @@ package Play.PlayObject.Animal;
 
 import Play.Play;
 import Play.PlayObject.PlayObject;
+import Play.PlayObject.Props.MusicalInstrument;
 
 public class Human extends Animal {
     public void hideIn(PlayObject po) {
@@ -18,7 +19,7 @@ public class Human extends Animal {
         super(name);
     }
 
-    public Human(String name, String musicalInstrument) {
+    public Human(String name, MusicalInstrument musicalInstrument) {
         super(name, musicalInstrument);
     }
 }

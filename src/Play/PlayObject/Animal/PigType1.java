@@ -2,6 +2,7 @@ package Play.PlayObject.Animal;
 
 import Play.Play;
 import Play.PlayObject.PlayObject;
+import Play.PlayObject.Props.MusicalInstrument;
 
 public class PigType1 extends Animal {
     public void sayWith(PigType1 pig, String str) {
@@ -38,7 +39,7 @@ public class PigType1 extends Animal {
         Play.displayNarration(s);
     }
 
-    public PigType1(String name, String musicalInstrument) {
+    public PigType1(String name, MusicalInstrument musicalInstrument) {
         super(name, musicalInstrument);
     }
 }

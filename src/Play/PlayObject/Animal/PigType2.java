@@ -3,6 +3,7 @@ package Play.PlayObject.Animal;
 import Play.Play;
 import Play.PlayObject.PlayObject;
 import Play.PlayObject.Props.Bag;
+import Play.PlayObject.Props.MusicalInstrument;
 import Play.PlayObject.Props.Weapon;
 
 import java.util.ArrayList;
@@ -42,7 +43,7 @@ public class PigType2 extends Animal {
         Play.displayNarration(s);
     }
 
-    public PigType2(String name, String musicalInstrument) {
+    public PigType2(String name, MusicalInstrument musicalInstrument) {
         super(name, musicalInstrument);
         mBag = new Bag(name + "'s bag");
     }

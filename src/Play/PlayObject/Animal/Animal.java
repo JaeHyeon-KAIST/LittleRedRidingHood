@@ -2,15 +2,16 @@ package Play.PlayObject.Animal;
 
 import Play.Play;
 import Play.PlayObject.PlayObject;
+import Play.PlayObject.Props.MusicalInstrument;
 
 public abstract class Animal extends PlayObject {
-    protected String mMusicalInstrument = null;
+    protected MusicalInstrument mMusicalInstrument = null;
 
     public void playMusicalInstrument() {
         if (mMusicalInstrument == null) {
             return;
         }
-        String s = mName + " plays his " + mMusicalInstrument;
+        String s = mName + " plays his " + mMusicalInstrument.getName();
         Play.displayNarration(s);
     }
 
@@ -89,7 +90,7 @@ public abstract class Animal extends PlayObject {
         super(name);
     }
 
-    protected Animal(String name, String musicalInstrument) {
+    protected Animal(String name, MusicalInstrument musicalInstrument) {
         super(name);
         mMusicalInstrument = musicalInstrument;
     }

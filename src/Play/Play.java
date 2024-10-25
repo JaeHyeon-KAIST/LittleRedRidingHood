@@ -10,6 +10,7 @@ import Play.PlayObject.Animal.Wolf;
 import Play.PlayObject.Place.House;
 import Play.PlayObject.Place.Forest;
 
+import Play.PlayObject.Props.MusicalInstrument;
 import Play.PlayObject.Props.Popcorn;
 import Play.PlayObject.Props.Weapon;
 import Play.Scene.Scene;
@@ -20,7 +21,6 @@ import Play.Scene.Scene4;
 import Play.Scene.Scene5;
 import Play.Scene.Scene6;
 import Play.Scene.Scene7;
-import Play.Scene.TestScene;
 
 public class Play {
     protected String mPlayName = null;
@@ -59,11 +59,12 @@ public class Play {
     }
 
     private void initializeActors() {
-        littleRedRidingHood = new Human("Little Red Riding Hood", "piano");
+        littleRedRidingHood = new Human("Little Red Riding Hood",
+            new MusicalInstrument("piano"));
         grandma = new Human("Grandma");
-        pig1 = new PigType1("Adam", "flute");
-        pig2 = new PigType1("Brian", "fiddle");
-        pig3 = new PigType2("Charles", "piano");
+        pig1 = new PigType1("Adam", new MusicalInstrument("flute"));
+        pig2 = new PigType1("Brian", new MusicalInstrument("fiddle"));
+        pig3 = new PigType2("Charles", new MusicalInstrument("piano"));
         wolf = new Wolf("Wolf");
     }
 
@@ -86,6 +87,5 @@ public class Play {
         mSceneList.add(new Scene5());
         mSceneList.add(new Scene6());
         mSceneList.add(new Scene7());
-        mSceneList.add(new TestScene());
     }
 }
