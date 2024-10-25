@@ -9,6 +9,11 @@ public class Human extends Animal {
         Play.displayNarration(s);
     }
 
+    public void runAwayFrom(PlayObject po) {
+        String s = mName + " runs away from " + po.getName();
+        Play.displayNarration(s);
+    }
+
     public Human(String name) {
         super(name);
     }

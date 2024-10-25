@@ -19,6 +19,8 @@ public class Wolf extends Animal {
 
     public void disguiseRevealed() {
         mDisguise = null;
+        String s = mName + "'s disguise is revealed";
+        Play.displayNarration(s);
     }
 
     public void walkToAnimals(Animal... animals) {
@@ -41,6 +43,11 @@ public class Wolf extends Animal {
 
     public void tryToOpen(PlayObject po) {
         String s = mName + " tries to open " + po.getName();
+        Play.displayNarration(s);
+    }
+
+    public void chase(Animal animal) {
+        String s = mName + " chases " + animal.getName();
         Play.displayNarration(s);
     }
 
