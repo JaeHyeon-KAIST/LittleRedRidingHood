@@ -16,17 +16,16 @@ public class Scene2 extends Scene {
         Play.displayNarration(mplay.wolf.getName() +
             " hide behind the tree"
         );
-//        mplay.wolf.walkTo(mplay.pig1); + pig2 + LRRH
-//        mplay.wolf.laugh();
-//        mplay.wolf.mouthWatering();
+        mplay.wolf.walkToAnimals(mplay.littleRedRidingHood, mplay.pig1,
+            mplay.pig2);
+        mplay.wolf.laugh();
+        mplay.wolf.drool();
         Play.displayNarration(mplay.wolf.getName() +
             " climbs tree"
         );
         mplay.wolf.say("I’ll get them.");
         mplay.wolf.disguiseTo(Wolf.disguiseType.fairyQueen);
-//        mplay.pig1.surprised();
-//        mplay.pig2.surprised();
-//        mplay.littleRedRidingHood.surprised();
+        mplay.littleRedRidingHood.surprisedWith(mplay.pig1, mplay.pig2);
         mplay.wolf.say("I'm goldilox the fairy queen. " +
             "Spirit of the woods is mine."
         );
@@ -43,17 +42,14 @@ public class Scene2 extends Scene {
             "was hanging on broke"
         );
         mplay.wolf.disguiseRevealed();
-//        mplay.pig1.surprised();
-//        mplay.pig2.surprised();
-//        mplay.littleRedRidingHood.surprised();
+        mplay.littleRedRidingHood.surprisedWith(mplay.pig1, mplay.pig2);
         mplay.pig1.runAwayTo(mplay.pigHouse);
         mplay.pig2.runAwayTo(mplay.pigHouse);
-//        mplay.littleRedRidingHood.runAwayTo(mplay.forest);
+        mplay.littleRedRidingHood.runAwayTo(mplay.forest);
         mplay.wolf.say("Curses.");
         Play.displayNarration(mplay.wolf.getName() +
             " comes up with a good idea"
         );
-        mplay.pig1.runAwayTo(mplay.pigHouse);
-        mplay.pig2.runAwayTo(mplay.pigHouse);
+        mplay.pig1.runAwayToWith(mplay.pigHouse, mplay.pig2);
     }
 }
