@@ -12,6 +12,15 @@ public class Bag extends PlayObject {
         return mPackedWeapons;
     }
 
+    public Weapon getWeapon(String weaponName) {
+        for (int i = 0; i < mPackedWeapons.size(); i++) {
+            if (mPackedWeapons.get(i).getName().equals(weaponName)) {
+                return mPackedWeapons.remove(i);
+            }
+        }
+        return null;
+    }
+
     public void packWeapon(String who, ArrayList<Weapon> weapons) {
         for (Weapon w : weapons) {
             mPackedWeapons.add(w);

@@ -10,6 +10,7 @@ import Play.PlayObject.Animal.Wolf;
 import Play.PlayObject.Place.House;
 import Play.PlayObject.Place.Forest;
 
+import Play.PlayObject.Props.Popcorn;
 import Play.PlayObject.Props.Weapon;
 import Play.Scene.Scene;
 import Play.Scene.Scene1;
@@ -68,10 +69,12 @@ public class Play {
 
     private void initializeProps() {
         pigHouse = new House("pig's house",
-            new Weapon("Popcorn"),
-            new Weapon("Exe"))
-        ;
-        grandmaHouse = new House("grandma's house");
+            new Popcorn("Popcorn"),
+            new Weapon("Exe")
+        );
+        grandmaHouse = new House("grandma's house",
+            new Weapon("Coal")
+        );
         forest = new Forest("forest");
     }
 
