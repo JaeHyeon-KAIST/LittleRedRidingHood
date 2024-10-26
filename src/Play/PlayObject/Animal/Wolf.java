@@ -5,12 +5,30 @@ import Play.PlayObject.PlayObject;
 import Play.PlayObject.Props.WolfPants;
 
 public class Wolf extends Animal {
+    // enum
     public enum disguiseType {
         fairyQueen,
         grandma,
     }
 
+    // field
     private disguiseType mDisguise = null;
+    private WolfPants mPants = null;
+    public WolfPants getPants() {
+        return mPants;
+    }
+
+    // constructor
+    public Wolf(String name) {
+        super(name);
+        mPants = new WolfPants(name + "'s pants");
+    }
+
+    // method
+    public void drool() {
+        String s = mName + " drools";
+        Play.displayNarration(s);
+    }
 
     public void disguiseTo(disguiseType dt) {
         mDisguise = dt;
@@ -22,12 +40,6 @@ public class Wolf extends Animal {
         mDisguise = null;
         String s = mName + "'s disguise is revealed";
         Play.displayNarration(s);
-    }
-
-    private WolfPants mPants = null;
-
-    public WolfPants getPants() {
-        return mPants;
     }
 
     public void walkToAnimals(Animal... animals) {
@@ -43,18 +55,13 @@ public class Wolf extends Animal {
         Play.displayNarration(s.toString());
     }
 
-    public void drool() {
-        String s = mName + " drools";
+    public void chase(Animal animal) {
+        String s = mName + " chases " + animal.getName();
         Play.displayNarration(s);
     }
 
     public void tryToOpen(PlayObject po) {
         String s = mName + " tries to open " + po.getName();
-        Play.displayNarration(s);
-    }
-
-    public void chase(Animal animal) {
-        String s = mName + " chases " + animal.getName();
         Play.displayNarration(s);
     }
 
@@ -73,10 +80,5 @@ public class Wolf extends Animal {
         } else {
             super.say(something);
         }
-    }
-
-    public Wolf(String name) {
-        super(name);
-        mPants = new WolfPants(name + "'s pants");
     }
 }

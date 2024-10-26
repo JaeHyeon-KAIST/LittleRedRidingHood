@@ -5,16 +5,15 @@ import Play.PlayObject.PlayObject;
 import Play.PlayObject.Props.MusicalInstrument;
 
 public class PigType1 extends Animal {
+    // constructor
+    public PigType1(String name, MusicalInstrument musicalInstrument) {
+        super(name, musicalInstrument);
+    }
+
+    // do with another pig together : say, dance, sing, hide, shack hands
     public void sayWith(PigType1 pig, String str) {
         String s =
             mName + " and " + pig.getName() + " say together, \"" + str + "\"";
-        Play.display(s);
-    }
-
-    public void sayWith(PigType1 pig, String action, String str) {
-        String s =
-            mName + " and " + pig.getName() + " [" + action + "] say " +
-                "together, \"" + str + "\"";
         Play.display(s);
     }
 
@@ -37,9 +36,5 @@ public class PigType1 extends Animal {
     public void shackHandsWith(PigType1 pig) {
         String s = mName + " shack hands with " + pig.getName();
         Play.displayNarration(s);
-    }
-
-    public PigType1(String name, MusicalInstrument musicalInstrument) {
-        super(name, musicalInstrument);
     }
 }

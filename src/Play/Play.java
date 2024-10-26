@@ -23,6 +23,7 @@ import Play.Scene.Scene6;
 import Play.Scene.Scene7;
 
 public class Play {
+    // fields
     protected String mPlayName = null;
     public List<Scene> mSceneList = new ArrayList<>();
     public Human littleRedRidingHood = null;
@@ -36,18 +37,7 @@ public class Play {
     public House grandmaHouse = null;
     public Forest forest = null;
 
-    public void displayPlayTitle() {
-        display("<<" + this.mPlayName + ">>");
-    }
-
-    public static void displayNarration(String s) {
-        display("[" + s + "]");
-    }
-
-    public static void display(String s) {
-        System.out.println(s);
-    }
-
+    // constructors
     public Play(String name) {
         mPlayName = name;
 
@@ -87,5 +77,18 @@ public class Play {
         mSceneList.add(new Scene5());
         mSceneList.add(new Scene6());
         mSceneList.add(new Scene7());
+    }
+
+    // methods
+    public void displayPlayTitle() {
+        display("<<" + this.mPlayName + ">>");
+    }
+
+    public static void displayNarration(String s) {
+        display("[" + s + "]");
+    }
+
+    public static void display(String s) {
+        System.out.println(s);
     }
 }

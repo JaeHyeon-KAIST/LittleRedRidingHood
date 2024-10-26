@@ -3,6 +3,7 @@ package Play.Scene;
 import Play.Play;
 
 public class Scene6 extends Scene {
+    // constructors
     public Scene6() {
         super("6. " + mplay.grandma.getName() + " rescues " +
             mplay.littleRedRidingHood.getName()

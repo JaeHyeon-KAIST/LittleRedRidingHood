@@ -4,6 +4,7 @@ import Play.Play;
 import Play.PlayObject.Animal.Wolf;
 
 public class Scene3 extends Scene {
+    // constructors
     public Scene3() {
         super("3. " + mplay.wolf.getName() + " goes to " +
             mplay.grandmaHouse.getName()

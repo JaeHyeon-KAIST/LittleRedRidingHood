@@ -4,6 +4,7 @@ import Play.Play;
 import Play.PlayObject.Props.Popcorn;
 
 public class Scene7 extends Scene {
+    // constructors
     public Scene7() {
         super("7. " + mplay.pig3.getName() + " chases out " +
             mplay.wolf.getName() + " from " + mplay.grandmaHouse.getName()

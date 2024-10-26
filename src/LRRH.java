@@ -9,6 +9,7 @@ public class LRRH {
 
         mPlay.displayPlayTitle();
 
+        // Display the title of each scene and play it
         for (Scene scene : mPlay.mSceneList) {
             scene.displaySceneTitle();
             scene.play();

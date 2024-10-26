@@ -1,6 +1,7 @@
 package Play.Scene;
 
 public class Scene5 extends Scene {
+    // constructors
     public Scene5() {
         super("5. " + mplay.pig3.getName() + " goes to rescue " +
             mplay.littleRedRidingHood.getName()
@@ -14,7 +15,6 @@ public class Scene5 extends Scene {
         mplay.pig3.surprised();
         mplay.pig3.packBag(mplay.pigHouse.getHouseWeapons());
         mplay.pig3.runTo(mplay.grandmaHouse);
-        mplay.pig1.walkTo(mplay.grandmaHouse);
-        mplay.pig2.walkTo(mplay.grandmaHouse);
+        mplay.pig1.walkToWith(mplay.grandmaHouse, mplay.pig2);
     }
 }

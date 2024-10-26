@@ -3,6 +3,7 @@ package Play.Scene;
 import java.util.Arrays;
 
 public class Scene1 extends Scene {
+    // constructors
     public Scene1() {
         super("1. " + mplay.littleRedRidingHood.getName() +
             " meets three pigs"
@@ -12,11 +13,11 @@ public class Scene1 extends Scene {
     @Override
     public void play() {
         mplay.littleRedRidingHood.walkTo(mplay.pigHouse);
+        mplay.pig1.danceWith(mplay.pig2);
         mplay.pig1.playMusicalInstrument();
         mplay.pig2.playMusicalInstrument();
         mplay.pig3.repairHouse();
-        mplay.pig1.walkTo(mplay.littleRedRidingHood);
-        mplay.pig2.walkTo(mplay.littleRedRidingHood);
+        mplay.pig1.walkToWith(mplay.littleRedRidingHood, mplay.pig2);
         mplay.pig1.sayWith(mplay.pig2, "Good morning, Miss Riding Hood!");
         mplay.littleRedRidingHood.say("Good morning! How do you do?");
         mplay.pig3.say("Good morning, Red Riding Hood!");
@@ -38,6 +39,7 @@ public class Scene1 extends Scene {
                 "wolf is in the wood."
         );
         mplay.pig1.laugh();
+        mplay.pig2.laugh();
         mplay.pig1.sayWith(mplay.pig2, "that old wolf is just a sussy. " +
             "All he does is huff and puff. We'll go with you and protect " +
             "you. Come along. We'll call his bluff."

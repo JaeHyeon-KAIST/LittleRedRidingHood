@@ -10,30 +10,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class House extends PlayObject {
+    // field
     protected HouseDoor mDoor = null;
-
     public HouseDoor getDoor() {
         return mDoor;
     }
 
-    protected HouseCloset mCloset = null;
-
-    public HouseCloset getCloset() {
-        return mCloset;
-    }
-
     protected HouseBed mBed = null;
-
     public HouseBed getBed() {
         return mBed;
     }
 
-    protected ArrayList<Weapon> mHouseWeapons = new ArrayList<>();
+    protected HouseCloset mCloset = null;
+    public HouseCloset getCloset() {
+        return mCloset;
+    }
 
+    protected ArrayList<Weapon> mHouseWeapons = new ArrayList<>();
     public ArrayList<Weapon> getHouseWeapons() {
         return mHouseWeapons;
     }
 
+    // constructor
     public House(String name, Weapon... weapons) {
         super(name);
         mDoor = new HouseDoor(name + "'s door");

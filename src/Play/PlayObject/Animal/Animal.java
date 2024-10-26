@@ -5,8 +5,20 @@ import Play.PlayObject.PlayObject;
 import Play.PlayObject.Props.MusicalInstrument;
 
 public abstract class Animal extends PlayObject {
+    // field
     protected MusicalInstrument mMusicalInstrument = null;
 
+    // constructor
+    protected Animal(String name) {
+        super(name);
+    }
+
+    protected Animal(String name, MusicalInstrument musicalInstrument) {
+        super(name);
+        mMusicalInstrument = musicalInstrument;
+    }
+
+    // method
     public void playMusicalInstrument() {
         if (mMusicalInstrument == null) {
             return;
@@ -84,14 +96,5 @@ public abstract class Animal extends PlayObject {
     public void knock(PlayObject po) {
         String s = mName + " knocks " + po.getName();
         Play.displayNarration(s);
-    }
-
-    protected Animal(String name) {
-        super(name);
-    }
-
-    protected Animal(String name, MusicalInstrument musicalInstrument) {
-        super(name);
-        mMusicalInstrument = musicalInstrument;
     }
 }

@@ -4,6 +4,7 @@ import Play.Play;
 import Play.PlayObject.Animal.Wolf;
 
 public class Scene2 extends Scene {
+    // constructors
     public Scene2() {
         super("2. " + mplay.littleRedRidingHood.getName() + " meets " +
             mplay.wolf.getName() + " with " +
@@ -43,10 +44,9 @@ public class Scene2 extends Scene {
         );
         mplay.wolf.disguiseRevealed();
         mplay.littleRedRidingHood.surprisedWith(mplay.pig1, mplay.pig2);
-        mplay.pig1.runAwayTo(mplay.pigHouse);
-        mplay.pig2.runAwayTo(mplay.pigHouse);
+        mplay.pig1.runAwayToWith(mplay.pigHouse, mplay.pig2);
         mplay.littleRedRidingHood.runAwayTo(mplay.forest);
-        mplay.wolf.say("Curses.");
+        mplay.wolf.say("Curses");
         Play.displayNarration(mplay.wolf.getName() +
             " comes up with a good idea"
         );
