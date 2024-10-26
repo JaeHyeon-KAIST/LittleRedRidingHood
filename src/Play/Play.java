@@ -61,7 +61,9 @@ public class Play {
     private void initializeProps() {
         pigHouse = new House("pig's house",
             new Popcorn("Popcorn"),
-            new Weapon("Exe")
+            new Weapon("Exe"),
+            new Weapon("Trap"),
+            new Weapon("Shovel")
         );
         grandmaHouse = new House("grandma's house",
             new Weapon("Coal")
