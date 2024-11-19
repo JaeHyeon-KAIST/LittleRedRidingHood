@@ -5,7 +5,8 @@ import Play.Play;
 public class Scene6 extends Scene {
     // constructors
     public Scene6() {
-        super("6. " + mplay.grandma.getName() + " rescues " +
+        super(
+            "6. " + mplay.grandma.getName() + " rescues " +
             mplay.littleRedRidingHood.getName()
         );
     }
@@ -14,7 +15,8 @@ public class Scene6 extends Scene {
     public void play() {
         mplay.littleRedRidingHood.runAwayFrom(mplay.wolf);
         mplay.wolf.chase(mplay.littleRedRidingHood);
-        Play.displayNarration(mplay.grandma.getName() +
+        Play.displayNarration(
+            mplay.grandma.getName() +
             " saves " + mplay.littleRedRidingHood.getName() +
             " from the wolf" + " with umbrella"
         );

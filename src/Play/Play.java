@@ -49,8 +49,10 @@ public class Play {
     }
 
     private void initializeActors() {
-        littleRedRidingHood = new Human("Little Red Riding Hood",
-            new MusicalInstrument("piano"));
+        littleRedRidingHood = new Human(
+            "Little Red Riding Hood",
+            new MusicalInstrument("piano")
+        );
         grandma = new Human("Grandma");
         pig1 = new PigType1("Adam", new MusicalInstrument("flute"));
         pig2 = new PigType1("Brian", new MusicalInstrument("fiddle"));
@@ -65,7 +67,8 @@ public class Play {
             new Weapon("Trap"),
             new Weapon("Shovel")
         );
-        grandmaHouse = new House("grandma's house",
+        grandmaHouse = new House(
+            "grandma's house",
             new Weapon("Coal")
         );
         forest = new Forest("forest");

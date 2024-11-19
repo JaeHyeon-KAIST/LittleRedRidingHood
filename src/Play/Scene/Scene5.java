@@ -3,7 +3,8 @@ package Play.Scene;
 public class Scene5 extends Scene {
     // constructors
     public Scene5() {
-        super("5. " + mplay.pig3.getName() + " goes to rescue " +
+        super(
+            "5. " + mplay.pig3.getName() + " goes to rescue " +
             mplay.littleRedRidingHood.getName()
         );
     }

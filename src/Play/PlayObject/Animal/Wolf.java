@@ -75,8 +75,8 @@ public class Wolf extends Animal {
     public void say(String something) {
         if (mDisguise != null) {
             String s =
-                mName + "(disguised as " + mDisguise + ") says, \"" +
-                    something + "\"";
+            mName + "(disguised as " + mDisguise + ") says, \"" + 
+            something + "\"";
             Play.display(s);
         } else {
             super.say(something);

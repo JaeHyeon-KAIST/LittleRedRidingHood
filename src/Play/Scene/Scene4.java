@@ -3,7 +3,8 @@ package Play.Scene;
 public class Scene4 extends Scene {
     // constructors
     public Scene4() {
-        super("4. " + mplay.wolf.getName() + " chases " +
+        super(
+            "4. " + mplay.wolf.getName() + " chases " +
             mplay.littleRedRidingHood.getName()
         );
     }

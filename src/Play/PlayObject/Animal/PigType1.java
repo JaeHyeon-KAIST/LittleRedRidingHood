@@ -13,7 +13,7 @@ public class PigType1 extends Animal {
     // do with another pig together : say, dance, sing, hide, shack hands
     public void sayWith(PigType1 pig, String str) {
         String s =
-            mName + " and " + pig.getName() + " say together, \"" + str + "\"";
+        mName + " and " + pig.getName() + " say together, \"" + str + "\"";
         Play.display(s);
     }
 
@@ -24,13 +24,13 @@ public class PigType1 extends Animal {
 
     public void singTogether(PigType1 pig, String str) {
         String s =
-            mName + " and " + pig.getName() + " sing together, \"" + str + "\"";
+        mName + " and " + pig.getName() + " sing together, \"" + str + "\"";
         Play.display(s);
     }
 
     public void hideTogetherIn(PigType1 pig, PlayObject po) {
         String s =
-            mName + " and " + pig.getName() + " hides in " + po.getName();
+        mName + " and " + pig.getName() + " hides in " + po.getName();
         Play.displayNarration(s);
     }
 
